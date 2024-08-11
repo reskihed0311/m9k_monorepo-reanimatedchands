@@ -1,6 +1,9 @@
 -- Variables that are used on both client and server
 SWEP.Gun = ("m9k_colt1911") -- must be the name of your swep but NO CAPITALS!
 
+
+SWEP.UseHands = true
+
 SWEP.Category               = "M9K Pistols"
 SWEP.Author                 = "iron angles and models hexed and converted to gmod my Mr Fokkusu"
 SWEP.Contact                = ""

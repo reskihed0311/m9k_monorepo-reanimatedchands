@@ -15,14 +15,14 @@ $attachment "2" "eject" 0 0 0 rotate 0 0 180
 
 
 $sequence "idle" {
-	"anims\idle1.smd"
+	"anims\idle.dmx"
 	activity "ACT_VM_IDLE" 1
 	snap
 	fps 30
 }
 
 $sequence "fire" {
-	"anims\shoot1.smd"
+	"anims\fire.dmx"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
 	{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 2 100" }
@@ -33,7 +33,7 @@ $sequence "fire" {
 
 
 $sequence "shoot_empty" {
-	"anims\fire_empty.smd"
+	"anims\fire_empty.dmx"
 	activity "ACT_VM_DRYFIRE" 1
 	{ event 5001 0 "21" }
 	snap
@@ -41,7 +41,7 @@ $sequence "shoot_empty" {
 }
 
 $sequence "reload" {
-	"anims\reload.smd"
+	"anims\reload.dmx"
 	activity "ACT_VM_RELOAD" 1
 	{ event 5004 15 "Dmgfok_co1911.Clipout" }
 	{ event 5004 40 "Dmgfok_co1911.Clipin" }
@@ -51,9 +51,9 @@ $sequence "reload" {
 }
 
 $sequence "draw" {
-	"anims\draw.smd"
+	"anims\draw.dmx"
 	activity "ACT_VM_DRAW" 1
 	fadein 0.2
 	fadeout 0.2
-	fps 0
+	fps 30
 }
