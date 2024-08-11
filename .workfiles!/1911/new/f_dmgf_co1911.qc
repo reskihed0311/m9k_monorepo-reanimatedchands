@@ -8,8 +8,8 @@ $model "1911" "1911_reference.dmx"
 
 $cdmaterials "models\weapons\v_models\colt 1911\"
 
-$attachment "1" "muzzle" 0 0 0 rotate 0 0 0
-$attachment "2" "eject" 0 0 0 rotate 0 0 180
+$attachment "1" "muzzle" 0.00 0.00 0.00 rotate -90 0 0
+$attachment "2" "eject" 0.00 0.00 0.00 rotate 0 160 -180
 
 
 $bonemerge "ValveBiped.Bip01_Spine4"
@@ -83,9 +83,9 @@ $sequence "shoot_empty" {
 $sequence "reload" {
 	"anims\reload.dmx"
 	activity "ACT_VM_RELOAD" 1
-	{ event 5004 15 "Dmgfok_co1911.Clipout" }
-	{ event 5004 40 "Dmgfok_co1911.Clipin" }
-	{ event 5004 51 "Dmgfok_co1911.Slideback" }
+	{ event 5004 11 "Dmgfok_co1911.Clipout" }
+	{ event 5004 35 "Dmgfok_co1911.Clipin" }
+	{ event 5004 48 "Dmgfok_co1911.Slideback" }
 	snap
 	fps 30
 }
